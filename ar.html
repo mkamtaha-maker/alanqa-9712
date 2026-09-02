@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صالون وسبا ليتوال النسائي | خدمات تجميل وعناية فاخرة</title>
+  
+  <!-- خطوط Cairo و Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            blush: {
+              50: '#fdf8f6',
+              100: '#f9eee9',
+              200: '#f4ddd4',
+              300: '#eac3b5',
+              600: '#c57d67',
+              700: '#a85b45',
+              800: '#8c4835',
+              900: '#5a2a1d',
+            },
+            sand: {
+              50: '#fbf9f5',
+              100: '#f4efe6',
+              800: '#2b2623',
+              900: '#1c1816',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="font-sans bg-sand-50 text-stone-800 antialiased">
+
+  <!-- Top Info Bar -->
+  <div class="bg-sand-900 text-stone-300 text-xs py-2.5 px-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span><i class="fa-solid fa-sparkles text-blush-600 ms-2"></i> احجزي جلستك الخاصة اليوم واحصلي على خصم 15% على أول زيارة</span>
+      <a href="index.html" class="font-bold text-white hover:text-blush-300 flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-globe text-blush-600"></i>
+        <span>English</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-blush-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-blush-100 text-blush-700 flex items-center justify-center text-xl font-bold shadow-sm">
+          ل
+        </div>
+        <div>
+          <span class="text-xl font-bold text-sand-900 block leading-tight">صالون ليتوال</span>
+          <span class="text-[9px] tracking-widest text-blush-700 uppercase font-semibold">صالون وسبا نسائي فاخر</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
+        <a href="#about" class="hover:text-blush-600 transition">عن الصالون</a>
+        <a href="#services" class="hover:text-blush-600 transition">قائمة الخدمات والأسعار</a>
+        <a href="#booking" class="hover:text-blush-600 transition">حجز موعد</a>
+      </nav>
+
+      <a href="#booking" class="bg-blush-700 hover:bg-blush-800 text-white text-xs font-bold px-6 py-2.5 rounded-full transition shadow-sm flex items-center gap-2">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>حجز موعد الآن</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 lg:py-28 bg-blush-50 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block px-3.5 py-1 mb-6 text-xs font-bold tracking-wider uppercase text-blush-800 bg-white rounded-full border border-blush-200 shadow-sm">
+          ✨ وجهتك الفاخرة لجمال الشعر والبشرة والاسترخاء
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-sand-900 leading-tight mb-6">
+          تألقي بجمال طبيعي وإطلالة استثنائية
+        </h1>
+        <p class="text-stone-600 leading-relaxed mb-8 max-w-lg text-sm sm:text-base">
+          نقدم لكِ تجربة استرخاء متكاملة تشمل تسريح وتصفيف الشعر، جلسات الهيدرافيشل لتنظيف ونضارة البشرة، وحمامات السبا الملكية على أيدي خبيرات معتمدات.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#booking" class="bg-blush-700 hover:bg-blush-800 text-white font-bold px-7 py-3.5 rounded-full transition shadow-lg text-sm">
+            احجزي موعدك
+          </a>
+          <a href="#services" class="bg-white hover:bg-sand-100 text-stone-800 font-bold px-7 py-3.5 rounded-full border border-stone-300 transition text-sm">
+            استعراض الأسعار
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="صالون تجميل" class="w-full h-80 lg:h-96 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-blush-700 font-bold uppercase tracking-wider text-xs">خدماتنا المتخصصة</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-sand-900 mt-2 mb-4">قائمة الخدمات والأسعار</h2>
+        <p class="text-stone-500 text-sm">نستخدم أفضل المنتجات الأوروبية والمكونات الطبيعية المعتمدة لضمان صحة بشرتك وشعرك.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Category 1: الشعر والتصفيف -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="text-xl font-bold text-sand-900 mb-4">العناية بالشعر والتصفيف</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>سشوار وتسريح ملكي</span>
+                <span class="font-bold text-blush-800">120 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>صبغة كاملة وبالياج مخصص</span>
+                <span class="font-bold text-blush-800">450 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>جلسة ترميم بالكافيار المركز</span>
+                <span class="font-bold text-blush-800">260 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>علاج الكيراتين والبروتين</span>
+                <span class="font-bold text-blush-800">600 ر.س</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 2: البشرة والهيدرافيشل -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3 class="text-xl font-bold text-sand-900 mb-4">العناية بالبشرة والفيشل</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>تنظيف هيدرافيشل عميق (60 د)</span>
+                <span class="font-bold text-blush-800">320 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>جلسة نضارة الكولاجين والتقشير</span>
+                <span class="font-bold text-blush-800">380 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>ماسك الذهب عيار 24 الفاخر</span>
+                <span class="font-bold text-blush-800">350 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>جلسة إزالة السموم والمسام</span>
+                <span class="font-bold text-blush-800">250 ر.س</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 3: الأظافر والسبا -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="text-xl font-bold text-sand-900 mb-4">الأظافر والسبا الملكي</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>مانيكير جل روسي احترافي</span>
+                <span class="font-bold text-blush-800">180 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>بديكير سبا مع حمام البارافين</span>
+                <span class="font-bold text-blush-800">220 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>مساج استرخائي بالأحجار الساخنة</span>
+                <span class="font-bold text-blush-800">340 ر.س</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>حمام مغربي بالأعشاب الطبيعية</span>
+                <span class="font-bold text-blush-800">390 ر.س</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Form -->
+  <section id="booking" class="py-20 bg-blush-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-blush-700 font-bold uppercase tracking-wider text-xs">حجز فوري ومريح</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-sand-900 mt-2 mb-2">احجزي موعدك الآن</h2>
+        <p class="text-stone-500 text-sm">اختاري الخدمة والوقت المناسب وسنقوم بتأكيد الحجز فوراً عبر رسالة واتساب.</p>
+      </div>
+
+      <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-blush-100">
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('تم استلام طلب الحجز بنجاح! سنتواصل معك للتأكيد.');">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">الاسم الكريم</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="مثال: سارة العبدالله">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">رقم الجوال / واتساب</label>
+              <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="050 123 4567">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">الخدمة المطلوبة</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm">
+                <option>تنظيف هيدرافيشل عميق (320 ر.س)</option>
+                <option>سشوار وتسريح ملكي (120 ر.س)</option>
+                <option>صبغة كاملة وبالياج مخصص (450 ر.س)</option>
+                <option>مانيكير وبديكير سبا متكامل (350 ر.س)</option>
+                <option>حمام مغربي بالأعشاب الطبيعية (390 ر.س)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">التاريخ والوقت المفضل</label>
+              <input type="datetime-local" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm text-stone-600">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-600 mb-1">ملاحظات أو طلبات خاصة</label>
+            <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="هل لديك حساسية تجاه منتج معين أو تفضيل لخبير معين؟"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-blush-700 hover:bg-blush-800 text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-check"></i>
+              <span>تأكيد إرسال طلب الحجز</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sand-900 text-stone-400 py-12 text-xs border-t border-sand-800">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-right">
+      <div>
+        <h4 class="text-white font-bold text-base mb-2">صالون ليتوال النسائي</h4>
+        <p class="text-stone-400 leading-relaxed">وجهتك الرائدة للعناية الفاخرة بالشعر والبشرة وجلسات الاسترخاء في بيئة مريحة وخصوصية تامة.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-2">أوقات العمل</h4>
+        <p>السبت - الخميس: 11:00 ص – 9:00 م<br>الجمعة: 1:00 م – 9:00 م</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-2">التواصل والموقع</h4>
+        <p>طريق الأمير سلطان، حي الروضة، جدة<br>+966 12 000 0000</p>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-8 pt-6 border-t border-stone-800 text-center">
+      <p>© 2026 صالون ليتوال للتجميل والسبا. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Étoile Beauty Lounge & Luxury Spa</title>
+  
+  <!-- Cormorant Garamond & Plus Jakarta Sans Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            blush: {
+              50: '#fdf8f6',
+              100: '#f9eee9',
+              200: '#f4ddd4',
+              300: '#eac3b5',
+              600: '#c57d67',
+              700: '#a85b45',
+              800: '#8c4835',
+              900: '#5a2a1d',
+            },
+            sand: {
+              50: '#fbf9f5',
+              100: '#f4efe6',
+              800: '#2b2623',
+              900: '#1c1816',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="font-sans bg-sand-50 text-stone-800 antialiased">
+
+  <!-- Top Info Bar -->
+  <div class="bg-sand-900 text-stone-300 text-xs py-2.5 px-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span><i class="fa-solid fa-sparkles text-blush-600 me-2"></i> Book your private session today & enjoy 15% off first visit</span>
+      <a href="ar.html" class="font-bold text-white hover:text-blush-300 flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-globe text-blush-600"></i>
+        <span>العربية</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-blush-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-blush-100 text-blush-700 flex items-center justify-center font-serif text-2xl font-bold shadow-sm">
+          L
+        </div>
+        <div>
+          <span class="text-xl font-serif font-bold text-sand-900 block leading-tight tracking-wide">L'ÉTOILE</span>
+          <span class="text-[9px] tracking-widest text-blush-700 uppercase font-semibold">Beauty Lounge & Spa</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
+        <a href="#about" class="hover:text-blush-600 transition">About</a>
+        <a href="#services" class="hover:text-blush-600 transition">Services & Pricing</a>
+        <a href="#packages" class="hover:text-blush-600 transition">VIP Packages</a>
+        <a href="#booking" class="hover:text-blush-600 transition">Book Online</a>
+      </nav>
+
+      <a href="#booking" class="bg-blush-700 hover:bg-blush-800 text-white text-xs font-bold px-6 py-2.5 rounded-full transition shadow-sm flex items-center gap-2">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>Book Appointment</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 lg:py-28 bg-blush-50 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block px-3.5 py-1 mb-6 text-xs font-bold tracking-wider uppercase text-blush-800 bg-white rounded-full border border-blush-200 shadow-sm">
+          ✨ Premium Hair, Skin & Wellness Sanctuary
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-sand-900 leading-tight mb-6">
+          Unveil Your Natural Radiance & Elegance
+        </h1>
+        <p class="text-stone-600 leading-relaxed mb-8 max-w-lg text-sm sm:text-base">
+          Experience personalized hair styling, rejuvenating hydra-facials, and relaxing royal spa treatments crafted by certified aesthetic experts.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#booking" class="bg-blush-700 hover:bg-blush-800 text-white font-bold px-7 py-3.5 rounded-full transition shadow-lg text-sm">
+            Book Appointment
+          </a>
+          <a href="#services" class="bg-white hover:bg-sand-100 text-stone-800 font-bold px-7 py-3.5 rounded-full border border-stone-300 transition text-sm">
+            View Service Menu
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Beauty Salon" class="w-full h-80 lg:h-96 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-blush-700 font-bold uppercase tracking-wider text-xs">Our Treatments</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-sand-900 mt-2 mb-4">Service Menu & Pricing</h2>
+        <p class="text-stone-500 text-sm">Each treatment uses organic and dermatologist-approved European formulations.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Category 1: Hair Styling & Care -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-sand-900 mb-4">Hair Styling & Care</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Signature Blowdry & Style</span>
+                <span class="font-bold text-blush-800">£35</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Balayage & Full Color</span>
+                <span class="font-bold text-blush-800">£110</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Caviar Deep Repair Treatment</span>
+                <span class="font-bold text-blush-800">£65</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>Keratin Smoothing Therapy</span>
+                <span class="font-bold text-blush-800">£140</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 2: Skin & Facials -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-sand-900 mb-4">Skin & Hydra-Facials</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Radiance Hydra-Facial (60m)</span>
+                <span class="font-bold text-blush-800">£75</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Collagen Boost & Micro-Peel</span>
+                <span class="font-bold text-blush-800">£90</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>24K Gold Rejuvenating Mask</span>
+                <span class="font-bold text-blush-800">£85</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>Detox Deep Pore Cleansing</span>
+                <span class="font-bold text-blush-800">£60</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 3: Nails & Spa -->
+        <div class="bg-sand-50 p-6 rounded-3xl border border-blush-100 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-blush-700 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-sand-900 mb-4">Nails & Royal Spa</h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Russian Gel Manicure</span>
+                <span class="font-bold text-blush-800">£45</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Spa Pedicure & Paraffin Bath</span>
+                <span class="font-bold text-blush-800">£55</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-stone-200 pb-2">
+                <span>Hot Stone Body Massage (60m)</span>
+                <span class="font-bold text-blush-800">£80</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>Moroccan Herbal Bath Ritual</span>
+                <span class="font-bold text-blush-800">£95</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Form -->
+  <section id="booking" class="py-20 bg-blush-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-blush-700 font-bold uppercase tracking-wider text-xs">Easy Scheduling</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-sand-900 mt-2 mb-2">Book Your Appointment</h2>
+        <p class="text-stone-500 text-sm">Select your preferred service and date. We will confirm your slot instantly.</p>
+      </div>
+
+      <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-blush-100">
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been received.');">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">Full Name</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="e.g. Sarah Jenkins">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">Phone / WhatsApp</label>
+              <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="+44 7000 000000">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">Preferred Treatment</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm">
+                <option>Radiance Hydra-Facial (£75)</option>
+                <option>Signature Blowdry & Style (£35)</option>
+                <option>Balayage & Full Color (£110)</option>
+                <option>Russian Gel Manicure & Pedicure (£85)</option>
+                <option>Moroccan Herbal Bath Ritual (£95)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-600 mb-1">Preferred Date & Time</label>
+              <input type="datetime-local" required class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm text-stone-600">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-600 mb-1">Special Notes / Preferences</label>
+            <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:border-blush-700 text-sm" placeholder="Any specific stylist request or skin allergies..."></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-blush-700 hover:bg-blush-800 text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-check"></i>
+              <span>Confirm Appointment Request</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Location -->
+  <footer class="bg-sand-900 text-stone-400 py-12 text-xs border-t border-sand-800">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h4 class="text-white font-serif text-lg font-bold mb-2">L'ÉTOILE Lounge</h4>
+        <p class="text-stone-400 leading-relaxed">Dedicated to bespoke hair styling, medical-grade skin therapies, and luxurious wellness rituals.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-2">Opening Hours</h4>
+        <p>Tue - Sat: 10:00 AM – 8:00 PM<br>Sun: 11:00 AM – 6:00 PM<br>Mon: Closed</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-2">Direct Contact</h4>
+        <p>18 Victoria Square, Bolton, UK<br>+44 161 000 0000</p>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-8 pt-6 border-t border-stone-800 text-center">
+      <p>© 2026 L'ÉTOILE Beauty Lounge. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
