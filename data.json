@@ -1,0 +1,29 @@
+{
+  "business_name": "Al-Anqa Women's Salon",
+  "hero": {
+    "title": "Rise and Shine: Your Journey to Timeless Beauty Starts Here",
+    "subtitle": "Experience premium hair, skin, and nail care tailored to your unique style. At Al-Anqa, we celebrate your individuality with luxury and grace.",
+    "cta_button": "Book Your Transformation"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Inspired by the symbol of renewal, Al-Anqa Salon is dedicated to helping every woman rediscover her inner radiance. Our team of expert stylists and therapists combine modern techniques with high-end products to provide an unparalleled beauty experience in a serene and welcoming environment."
+  },
+  "services": [
+    {
+      "title": "Master Hair Artistry",
+      "description": "From precision cuts and vibrant coloring to professional styling, our experts craft looks that enhance your natural features."
+    },
+    {
+      "title": "Luxury Skin Care",
+      "description": "Rejuvenate your complexion with our signature facials and specialized skin treatments designed for a healthy, glowing finish."
+    },
+    {
+      "title": "Bridal & Glamour Makeup",
+      "description": "Radiate confidence on your special day with professional makeup services tailored for weddings, events, and photography."
+    }
+  ],
+  "contact": {
+    "email": "gearradarservices@gmail.com"
+  }
+}
